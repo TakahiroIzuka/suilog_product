@@ -8,12 +8,16 @@ jobs:
           - APP_ENV: testing
           - DB_CONNECTION: mysql
           - DB_DATABASE: test_suilog_db
-          - DB_USERNAME: root
+          - DB_HOST: 127.0.0.1
+          - DB_USERNAME: 'root'
+          - DB_PASSWORD: 'rootpass'
  
       - image: takahiroi/suilog_db:latest
         environment:
           - MYSQL_ALLOW_EMPTY_PASSWORD: true
           - MYSQL_DATABASE: test_suilog_db
+          - MYSQL_USER: 'root'
+          - MYSQL_ROOT_PASSWORD: 'rootpass'
 
     steps:
       - checkout
