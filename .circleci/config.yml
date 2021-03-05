@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: takahiroi/suilog_app:latest
       - image: takahiroi/suilog_db:latest
+        environment:
           MYSQL_ROOT_PASSWORD: rootpw
           MYSQL_DATABASE: test_suilog_db
           MYSQL_USER: user
