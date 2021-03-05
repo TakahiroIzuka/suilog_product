@@ -9,7 +9,7 @@ jobs:
           - DB_CONNECTION: mysql
           - DB_DATABASE: test_suilog_db
           - DB_USERNAME: root
-          - DB_PASSWORD: rootpass
+          - DB_PASSWORD: Yuri1226
  
       - image: takahiroi/suilog_db:latest
         environment:
