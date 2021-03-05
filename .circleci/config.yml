@@ -7,8 +7,8 @@ jobs:
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
           MYSQL_DATABASE: test_suilog_db
-          MYSQL_USER: user
-          MYSQL_PASSWORD: passw0rd
+          MYSQL_USER: suilog
+          MYSQL_PASSWORD: Yuri1226
           
 
     steps:
