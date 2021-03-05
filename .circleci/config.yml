@@ -17,6 +17,11 @@ jobs:
       - restore_cache:
           key: composer-v1-{{ checksum "composer.lock" }}
       - run: composer install -n --prefer-dist
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.lock" }}
+          paths:
+            - vendor
+      
       - restore_cache:
           key: npm-v1-{{ checksum "package-lock.json" }}
       - run:
@@ -30,10 +35,6 @@ jobs:
           paths:
             - node_modules
       - run: npm run dev
-      - save_cache:
-          key: composer-v1-{{ checksum "composer.lock" }}
-          paths:
-            - vendor
       - run:
           name: dockerize のインストール
           command: wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && sudo tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
