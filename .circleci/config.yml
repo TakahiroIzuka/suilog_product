@@ -39,6 +39,9 @@ jobs:
       - run:
           name: php test
           command: vendor/bin/phpunit
+      - store_artifacts: 
+          path: ./storage/logs
+
 
   deploy:
     docker:
