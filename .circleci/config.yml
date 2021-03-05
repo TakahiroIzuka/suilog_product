@@ -50,7 +50,6 @@ jobs:
           command: dockerize -wait tcp://localhost:3306 -timeout 1m
       - run: echo "APP_KEY=" > .env.testing
       - run: php artisan key:generate
-      - run: mysql 
       - run: php artisan migrate:refresh --seed
       - run:
           name: php test
