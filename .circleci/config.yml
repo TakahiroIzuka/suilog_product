@@ -66,8 +66,8 @@ jobs:
       - run:
           name: deploy 
           command: | # シードを入れたい時はこれを、php artisan migrate:refresh --seed --force && \
-            ssh -o StrictHostKeyChecking=no -t webapp@${HOST_NAME} "cd suilog_product && \
-              git pull origin master && \
+            ssh -o StrictHostKeyChecking=no -t webapp@${HOST_NAME} "cd su-product && \
+              git pull origin main && \
               composer install -n --no-dev --prefer-dist && \ 
               php artisan config:cache" 
 
@@ -83,4 +83,4 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
