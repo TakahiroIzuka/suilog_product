@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark gradient-mevius">
 
-  <a class="navbar-brand" href="/"><i class="fas fa-smoking"></i>スイログ</a>
+  <a class="navbar-brand" href="/"><i class="fas fa-smoking head_log"></i>スイログ</a>
 
   <ul class="navbar-nav ml-auto">
 
