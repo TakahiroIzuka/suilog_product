@@ -3,8 +3,8 @@
 @section('title', 'マップ')
 
 @section('gmap_js')
-<script src="js/map.js"></script>
-<script src="js/gmap_api.js"></script>
+<script src="{{ asset('/js/map.js') }}"></script>
+<script src="{{ asset('/js/gmap_api.js') }}"></script>
 @endsection
 
 @section('php_map')
