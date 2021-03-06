@@ -19,9 +19,10 @@
     </div>
     <div class="description" id="{{ 'distance' }}">
       {{ $store['distance'] }}
-      </div>
-      <div class="description" id="{{ 'time' }}">
+    </div>
+    <div class="description" id="{{ 'time' }}">
       {{ $store['time'] }}
+    </div>
   </div>
   <div class="card-body pt-0 pb-2 pl-3">
     <div class="card-text">
