@@ -9,6 +9,8 @@ jobs:
           MYSQL_DATABASE: test_suilog_db
           MYSQL_USER: suilog
           MYSQL_PASSWORD: Yuri1226
+        environment:
+      - DB_HOST: 127.0.0.1
           
 
     steps:
