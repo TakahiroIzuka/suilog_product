@@ -3,8 +3,8 @@
 @section('title', 'ストア一覧')
 
 @section('gmap_js')
-<script src="js/distance_matrix_index.js"></script>
-<script src="/js/gmap_api.js"></script>
+<script src="{{ asset('/js/distance_matrix_index.js') }}"></script>
+<script src="{{ asset('/js/gmap_api.js') }}"></script>
 @endsection
 
 @section('php')
