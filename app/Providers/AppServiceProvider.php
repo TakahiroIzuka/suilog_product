@@ -22,15 +22,15 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    // public function boot()
-    // {
-    //     //
-    // }
-
-    public function boot(UrlGenerator $url)
+    public function boot()
     {
-        if (in_array(config('app.env'), ['production'], true)) {
-          $url->forceScheme('https');
-        }
+        //
     }
+
+    // public function boot(UrlGenerator $url)
+    // {
+    //     if (in_array(config('app.env'), ['production'], true)) {
+    //       $url->forceScheme('https');
+    //     }
+    // }
 }
