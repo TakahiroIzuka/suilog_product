@@ -3,8 +3,14 @@
 @section('title', 'マップ')
 
 @section('gmap_js')
-<script src="{{ asset('/js/map.js') }}"></script>
-<script src="{{ asset('/js/gmap_api.js') }}"></script>
+  @if(app('env')=='local')
+    <script src="{{ asset('/js/map.js') }}"></script>
+    <script src="{{ asset('/js/gmap_api.js') }}"></script>
+  @endif
+  @if(app('env')=='production')
+    <script src="{{ secure_asset('/js/map.js') }}"></script>
+    <script src="{{ secure_asset('/js/gmap_api.js') }}"></script>
+  @endif
 @endsection
 
 @section('php_map')
