@@ -123,7 +123,7 @@ for($i = 0; $i < $max; $i++) {
   </div>
   @endfor
   <!-- ペジネーション -->
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center mt-4">
     {{ $stores->links() }}
   </div>
 </div>
