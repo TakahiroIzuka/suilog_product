@@ -123,7 +123,9 @@ for($i = 0; $i < $max; $i++) {
   </div>
   @endfor
   <!-- ペジネーション -->
-  {{ $stores->links() }}
+  <div class="row d-flex justify-content-center">
+    {{ $stores->links() }}
+  </div>
 </div>
 
 <!--The div element for the map -->
