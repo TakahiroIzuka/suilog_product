@@ -12,8 +12,8 @@ class CardController extends Controller
 {
     public function index()
     {
-        $stores = Store::where('status', 1)->orderBy('id', 'ASC')->paginate(22);
-        $geos = Geo::paginate(22);
+        $stores = Store::where('status', 1)->orderBy('id', 'ASC')->paginate(18);
+        $geos = Geo::paginate(18);
 
         return view('cards.index', compact('stores', 'geos'));
     }

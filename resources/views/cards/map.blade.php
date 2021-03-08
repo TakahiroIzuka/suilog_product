@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'マップ')
+@section('title', 'マップから探す')
 
 @section('gmap_js')
   @if(app('env')=='local')
