@@ -31,7 +31,6 @@ function initMap() {
                   alert("Error with distance matrix");
                   return;
                 }
-                console.log(response);
                 
                 // Callbackで取得したデータとPHPから受け取ったデータをHTMLへ飛ばす
                 document.getElementById("distance")

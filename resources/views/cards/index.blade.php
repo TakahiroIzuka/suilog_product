@@ -80,35 +80,39 @@ for($i = 0; $i < $max; $i++) {
 
 @section('content')
 @include('nav')
-<div class="container" id="main">
+<div class="container px-0" id="main">
   <!-- jsでinsertBeforeを指定する用の捨て要素 -->
   <div id="sute"></div>
   @for($i = 0; $i < $max; $i++)
   @php
   $store = $stores_js[$i]
   @endphp
-  <div class="card mt-3">
-    <div class="card-body d-flex flex-row">
+  <div class="card mar-t-3">
+    <div class="card-body d-flex flex-row pb-2">
       <a class="stretched-link" id="{{ 'link' . $i }}"></a>
       <i class="fas fa-beer fa-3x mr-1"></i>
       <div>
-        <h3 class="font-weight-bold h4 card-title" id="{{ 'name' . $i }}">
-          {{ $store['name'] }}
-        </h3>
-        <div class="font-weight-lighter" id="{{ 'score' . $i }}">
-          {{ $store['score'] }}
+        <div class="d-flex">
+          <h3 class="font-weight-bold h4 card-title mb-1" id="{{ 'name' . $i }}">
+            {{ $store['name'] }}
+          </h3>
+          <a class="description px-3" id="{{ 'type' . $i }}">
+            ジャンル : {{ $store['type'] }}
+          </a>
+          <div class="font-weight-lighter" id="{{ 'score' . $i }}">
+            スイログ評価 ( {{ $store['score'] }} )
+          </div>
         </div>
       </div>
     </div>
     <div class="card-body pt-0 pb-2">
-      <a class="h4" id="{{ 'type' . $i }}">
-      {{ $store['type'] }}
-      </a>
       <div class="description" id="{{ 'station' . $i }}">
-      {{ $store['station'] }}
+      最寄駅 : {{ $store['station'] }}
       </div>
-      <div class="description" id="{{ 'distance' . $i }}"></div>
-      <div class="description" id="{{ 'time' . $i }}"></div>
+      <div class="d-flex">
+        <div class="description pr-3" id="{{ 'distance' . $i }}"></div>
+        <div class="description" id="{{ 'time' . $i }}"></div>
+      </div>
       <div class="description text-success" id="{{ 'smoking_green' . $i }}">
       {{ $store['smoking_green'] }}
       </div>

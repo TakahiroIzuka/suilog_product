@@ -39,8 +39,14 @@ $geo_php = $geo->lat . "," . $geo->lng;
 
 @section('content')
   @include('nav')
-  <div class="container">
+  <div class="container px-0">
     @include('cards.card')
+    @if($articles->has(0))
+      @foreach($articles as $article)
+        @include('articles.article_card')
+      @endforeach()
+    @endif
+    @include('articles.create')
   </div>
 
   <!-- マップ -->

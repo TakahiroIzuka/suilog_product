@@ -58,9 +58,9 @@ function initMap() {
                   document.getElementById("score" + i)
                     .textContent = "スイログ評価 (" + stores[store_id].score + ")";
                   document.getElementById("type" + i)
-                    .textContent = stores[store_id].type;
+                    .textContent = "ジャンル : " + stores[store_id].type;
                   document.getElementById("station" + i)
-                    .textContent = stores[store_id].station;
+                    .textContent = "最寄駅 : " + stores[store_id].station;
                   document.getElementById("distance" + i)
                     .textContent = "距離 : " + response.rows[i].elements[0].distance.text;
                   document.getElementById("time" + i)

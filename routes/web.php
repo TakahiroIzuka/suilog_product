@@ -19,3 +19,4 @@ Route::prefix('cards')->name('cards.')->group(function () {
   Route::delete('/{store}/like', 'CardController@unlike')->name('unlike')->middleware('auth');
 });
 Route::get('/map', 'CardController@map')->name('cards.map');
+Route::resource('/articles', 'ArticleController');

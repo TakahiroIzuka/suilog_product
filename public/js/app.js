@@ -20495,7 +20495,7 @@ var render = function() {
       { staticClass: "btn m-0 p-1 shadow-none", attrs: { type: "button" } },
       [
         _c("i", {
-          staticClass: "fas fa-heart mr-1",
+          staticClass: "fas fa-thumbs-up mr-1",
           class: {
             "red-text": this.isLikedBy,
             "animated heartBeat fast": this.gotToLike
