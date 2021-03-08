@@ -32,6 +32,7 @@ function initMap() {
                   return;
                 }
 
+                // 値を０からナンバリング
                 for (let i = 0; i < max; i++) {
                   response.rows[i].elements.push([i]);
                 }
@@ -55,7 +56,7 @@ function initMap() {
                   document.getElementById("name" + i)
                     .textContent = stores[store_id].name;
                   document.getElementById("score" + i)
-                    .textContent = "スイログ評価: (" + stores[store_id].score + ")";
+                    .textContent = "スイログ評価 (" + stores[store_id].score + ")";
                   document.getElementById("type" + i)
                     .textContent = stores[store_id].type;
                   document.getElementById("station" + i)

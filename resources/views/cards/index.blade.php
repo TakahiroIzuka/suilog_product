@@ -4,11 +4,11 @@
 
 @section('gmap_js')
   @if(app('env')=='local')
-    <script src="{{ asset('/js/distance_matrix_index.js') }}"></script>
+    <script src="{{ asset('/js/dis_rix_index.js') }}"></script>
     <script src="{{ asset('/js/gmap_api.js') }}"></script>
   @endif
   @if(app('env')=='production')
-    <script src="{{ secure_asset('/js/distance_matrix_index.js') }}"></script>
+    <script src="{{ secure_asset('/js/dis_rix_index.js') }}"></script>
     <script src="{{ secure_asset('/js/gmap_api.js') }}"></script>
   @endif
 @endsection
@@ -107,12 +107,8 @@ for($i = 0; $i < $max; $i++) {
       <div class="description" id="{{ 'station' . $i }}">
       {{ $store['station'] }}
       </div>
-      <div class="description" id="{{ 'distance' . $i }}">
-      {{ $store['distance'] }}
-      </div>
-      <div class="description" id="{{ 'time' . $i }}">
-      {{ $store['time'] }}
-      </div>
+      <div class="description" id="{{ 'distance' . $i }}"></div>
+      <div class="description" id="{{ 'time' . $i }}"></div>
       <div class="description text-success" id="{{ 'smoking_green' . $i }}">
       {{ $store['smoking_green'] }}
       </div>
@@ -128,6 +124,6 @@ for($i = 0; $i < $max; $i++) {
   </div>
 </div>
 
-<!--The div element for the map -->
+<!-- マップ -->
 <div id="map"></div>
 @endsection

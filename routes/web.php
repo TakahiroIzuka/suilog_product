@@ -12,7 +12,7 @@
 */
 
 Auth::routes();
-Route::get('/', 'CardController@index');
+Route::get('/', 'CardController@index')->name('card.index');
 Route::get('/show/{id}', 'CardController@show')->name('cards.show');
 Route::prefix('cards')->name('cards.')->group(function () {
   Route::put('/{store}/like', 'CardController@like')->name('like')->middleware('auth');
