@@ -77,7 +77,7 @@ $link_show = config('app.link_show');
 
 @section('content')
   @include('nav')
-  <div class="container">
+  <div class="container px-0">
     <!-- マップ用div要素 -->
     <div id="map"></div>
   </div>
