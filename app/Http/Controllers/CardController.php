@@ -20,9 +20,11 @@ class CardController extends Controller
     public function show($id)
     {
         $store = Store::where('id', $id)->where('status', 1)->first();
+        $url = Url::where('store_id', $id)->first();
+        $geo = Geo::where('store_id', $id)->first();
 
 
-        return view('cards.show', ['store' => $store]);
+        return view('cards.show', compact('store', 'url', 'geo'));
     }
 
     public function map() {
