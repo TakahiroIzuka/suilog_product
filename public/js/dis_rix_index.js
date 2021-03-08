@@ -32,6 +32,7 @@ function initMap() {
                   return;
                 }
 
+                // 値を０からナンバリング
                 for (let i = 0; i < max; i++) {
                   response.rows[i].elements.push([i]);
                 }
