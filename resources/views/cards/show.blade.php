@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'ストア一覧')
+@section('title', 'ストア詳細')
 
 @section('gmap_js')
   @if(app('env')=='local')
