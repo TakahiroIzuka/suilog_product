@@ -12,3 +12,9 @@
 .head_log:before {
   margin-right: 10px;
 }
+
+@media screen and (min-width: 576px) {
+  .mar-t-3 {
+    margin-top: 15px;
+  }
+}

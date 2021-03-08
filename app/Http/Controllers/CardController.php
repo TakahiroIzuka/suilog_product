@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Store;
 use App\Url;
 use App\Geo;
+use App\Article;
 use Illuminate\Http\Request;
 
 class CardController extends Controller
@@ -22,9 +23,12 @@ class CardController extends Controller
         $store = Store::where('id', $id)->where('status', 1)->first();
         $url = Url::where('store_id', $id)->first();
         $geo = Geo::where('store_id', $id)->first();
+        $articles = Article::where('store_id', $id)->get();
+        // dd($articles);
 
 
-        return view('cards.show', compact('store', 'url', 'geo'));
+
+        return view('cards.show', compact('store', 'url', 'geo', 'articles'));
     }
 
     public function map() {

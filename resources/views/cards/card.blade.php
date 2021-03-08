@@ -1,24 +1,28 @@
-<div class="card mt-3">
-  <div class="card-body d-flex flex-row">
+<div class="card mb-3 mar-t-3">
+  <div class="card-body d-flex flex-row pb-2">
     <i class="fas fa-beer fa-3x mr-1"></i>
     <div>
-      <div class="font-weight-bold h4 card-title">
-        {{ $store->name }}
-      </div>
-      <div class="font-weight-lighter">
-        スイログ評価 ( {{ $store->score }} )
+      <div class="d-flex">
+        <h3 class="font-weight-bold h4 card-title mb-1" id="{{ 'name' }}">
+          {{ $store['name'] }}
+        </h3>
+        <a class="description px-3" id="{{ 'type' }}">
+          ジャンル : {{ $store['type'] }}
+        </a>
+        <div class="font-weight-lighter" id="{{ 'score' }}">
+          スイログ評価 ( {{ $store['score'] }} )
+        </div>
       </div>
     </div>
   </div>
   <div class="card-body pt-0 pb-2">
-    <h3 class="h4 card-title">
-    {{ $store->type }}
-    </h3>
-    <div class="card-text">
-    {!! nl2br(e( $store->station )) !!}
+    <div class="description" id="{{ 'station' }}">
+      最寄駅 : {{ $store['station'] }}
     </div>
-    <div class="description" id="{{ 'distance' }}"></div>
-    <div class="description" id="{{ 'time' }}"></div>
+    <div class="d-flex">
+        <div class="description pr-3" id="{{ 'distance' }}"></div>
+        <div class="description" id="{{ 'time' }}"></div>
+    </div>
     @if($store->smoking == '全席喫煙可')
       <div class="description text-success" id="{{ 'smoking' }}">
         {{ $store->smoking }}
