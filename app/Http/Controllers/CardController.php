@@ -24,9 +24,6 @@ class CardController extends Controller
         $url = Url::where('store_id', $id)->first();
         $geo = Geo::where('store_id', $id)->first();
         $articles = Article::where('store_id', $id)->get();
-        // dd($articles);
-
-
 
         return view('cards.show', compact('store', 'url', 'geo', 'articles'));
     }

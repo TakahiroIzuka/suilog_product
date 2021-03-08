@@ -89,7 +89,7 @@ for($i = 0; $i < $max; $i++) {
   @endphp
   <div class="card mar-t-3">
     <div class="card-body d-flex flex-row pb-2">
-      <a class="stretched-link" id="{{ 'link' . $i }}"></a>
+      <a class="stretched-link" href="{{ $store['url'] }}" id="{{ 'link' . $i }}"></a>
       <i class="fas fa-beer fa-3x mr-1"></i>
       <div>
         <div class="d-flex">
