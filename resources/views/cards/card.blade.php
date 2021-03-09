@@ -48,10 +48,10 @@
   <div class="card-body mt10">
     <div class="row">
       <div class="col-md-6 d-flex justify-content-center mb-2">
-        <a href="{{ $url->url }}" type="submit" class="btn btn-primary btn-lg col-md-8 mx-auto">食べログページへ</a>
+        <a href="{{ $url->url }}" type="text/html" class="btn btn-primary btn-lg col-md-8 mx-auto">食べログページへ</a>
       </div>
       <div class="col-md-6 d-flex justify-content-center mb-2">
-        <a href="{{ route('card.index') }}" type="submit" class="btn btn-secondary btn-lg col-md-6 mx-auto">一覧へ戻る</a>
+        <a href="{{ route('card.index') }}" type="text/html" class="btn btn-secondary btn-lg col-md-6 mx-auto">一覧へ戻る</a>
       </div>
     </div>
   </div>
