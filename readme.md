@@ -1,6 +1,4 @@
-# スイログ
-
-# suilog_product
+# スイログ　suilog_product
 
 喫煙マナーを促進するための、喫煙可能な飲食店が検索できる飲食店検索マップアプリ
 開発内容：Pythonにて食べログサイトのスクレイピング、GooglemapAPI連携、UIデザイン(Bootstrap)、会員機能、スイログ評価機能、クチコミ投稿機能
@@ -9,6 +7,7 @@
 ## デモ
 
 ![System Diagram-Page-3](https://user-images.githubusercontent.com/67720987/110643482-7bde3f00-81f7-11eb-9a66-1adbbe4b4ff3.png)
+
 
 
 ## ER図
@@ -27,6 +26,14 @@
 
 
 
+## 注意事項
+
+ログイン用ユーザー
+* email : user@sample.com
+* password : user
+
+
+
 ## 使用技術
 
 * HTML/CSS
@@ -42,12 +49,6 @@
 * nginx
 
 
-## 注意事項
-
-ログイン用ユーザー
-* email : user@sample.com
-* password : user
-
 
 ## 文責
 
@@ -55,6 +56,8 @@
 
 * 伊塚　隆弘
 * E-mail : takahiroi.311@gmail.com
+
+
 
 ## 参考文献
 
