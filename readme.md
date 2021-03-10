@@ -9,8 +9,6 @@
 
 ## インフラ構造図
 ![System Diagram (3)](https://user-images.githubusercontent.com/67720987/110645657-839ee300-81f9-11eb-8d03-066f8d0bbd21.png)
-![System Diagram-Page-1](https://user-images.githubusercontent.com/67720987/110646260-1475be80-81fa-11eb-8e95-5560fe0818ee.png)
-
 
 ## DB設計
 ![System Diagram-Page-2 (2)](https://user-images.githubusercontent.com/67720987/110644110-1dfe2700-81f8-11eb-9719-bd97ca325a32.png)
