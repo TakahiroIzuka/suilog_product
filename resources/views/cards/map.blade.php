@@ -69,7 +69,7 @@ $link_show = config('app.link_show');
 /* map用のstyle */
 #map {
     width: 100%;
-    height: 850px;
+    height: 1100px;
     margin: 0 auto;
 }
 </style>
