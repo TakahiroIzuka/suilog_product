@@ -1,4 +1,4 @@
-スイログ
+# スイログ
 
 # suilog_product
 
@@ -9,12 +9,14 @@
 ## デモ
 
 ![System Diagram-Page-3](https://user-images.githubusercontent.com/67720987/110643482-7bde3f00-81f7-11eb-9a66-1adbbe4b4ff3.png)
-![System Diagram-Page-2 (1)](https://user-images.githubusercontent.com/67720987/110643704-bb0c9000-81f7-11eb-880e-b7f91d097d22.png)
+
+
+## ER図
+![System Diagram-Page-2 (2)](https://user-images.githubusercontent.com/67720987/110644110-1dfe2700-81f8-11eb-9719-bd97ca325a32.png)
+
 
 
 ## 使い方
-
-DEMOの実行方法など、"Webアプリ"の基本的な使い方を説明
 
 1. スイログサイトにアクセス https://suilog.work
 2. トップページでは喫煙可能な飲食店が現在地から近い順で表示されます。
