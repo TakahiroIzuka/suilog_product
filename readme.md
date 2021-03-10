@@ -6,11 +6,12 @@
 ## デモ
 ![System Diagram-Page-3](https://user-images.githubusercontent.com/67720987/110643482-7bde3f00-81f7-11eb-9a66-1adbbe4b4ff3.png)
 
+## DB設計
+![System Diagram-Page-2 (2)](https://user-images.githubusercontent.com/67720987/110644110-1dfe2700-81f8-11eb-9719-bd97ca325a32.png)
+
 ## インフラ構造図
 ![System Diagram (3)](https://user-images.githubusercontent.com/67720987/110645657-839ee300-81f9-11eb-8d03-066f8d0bbd21.png)
 
-## DB設計
-![System Diagram-Page-2 (2)](https://user-images.githubusercontent.com/67720987/110644110-1dfe2700-81f8-11eb-9719-bd97ca325a32.png)
 
 
 ## 使い方
