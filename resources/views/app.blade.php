@@ -21,6 +21,8 @@
   @if(app('env')=='production')
     <link rel="stylesheet" href="{{ secure_asset('css/common.css') }}">
   @endif
+
+  @yield('css_map')
 </head>
 
 <body>
