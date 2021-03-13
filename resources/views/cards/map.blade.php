@@ -76,7 +76,7 @@ $link_show = config('app.link_show');
 @media screen and (max-width: 425px) {
   #map {
     width: 100%;
-    height: 750px;
+    height: 700px;
     margin: 0 auto;
   }
 }
