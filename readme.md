@@ -34,12 +34,12 @@
 ## 使用技術
 
 * HTML/CSS
-* Bootstrap
-* PHP(laravel)
-* MySQL
+* MDBootstrap
+* PHP(laravel 6.2)
+* MySQL 5.7
 * JavaScript
-* Vue.js
-* Python
+* Vue.js 2.6
+* Python 3.6.5
 * Docker
 * CircleCi
 * Aws
