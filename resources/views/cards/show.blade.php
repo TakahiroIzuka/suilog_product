@@ -28,15 +28,6 @@ $geo_php = $geo->lat . "," . $geo->lng;
 </script>
 @endsection
 
-@section('css_map')
-<style type="text/css">
-    /* マップは表示しないので,0pxを指定 */
-    #map {
-      height: 0px;
-    }
-</style>
-@endsection
-
 @section('content')
   @include('nav')
   <div class="container px-0">
@@ -50,5 +41,5 @@ $geo_php = $geo->lat . "," . $geo->lng;
   </div>
 
   <!-- マップ -->
-  <div id="map"></div>
+  <div id="map" class="map-unuse"></div>
 @endsection
