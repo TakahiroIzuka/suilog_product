@@ -13,6 +13,23 @@
   margin-right: 10px;
 }
 
+.map-unuse {
+  height: 0px;
+}
+
+.map-use {
+  width: 100%;
+  height: 850px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .map-use {
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 576px) {
   .mar-t-3 {
     margin-top: 15px;

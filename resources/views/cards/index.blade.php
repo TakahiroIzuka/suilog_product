@@ -69,15 +69,6 @@ for($i = 0; $i < $max; $i++) {
 </script>
 @endsection
 
-@section('css_map')
-<style type="text/css">
-    /* マップは表示しないので,0pxを指定 */
-    #map {
-      height: 0px;
-    }
-</style>
-@endsection
-
 @section('content')
 @include('nav')
 <div class="container px-0" id="main">
@@ -129,5 +120,5 @@ for($i = 0; $i < $max; $i++) {
 </div>
 
 <!-- マップ -->
-<div id="map"></div>
+<div id="map" class="map-unuse"></div>
 @endsection

@@ -64,21 +64,10 @@ $link_show = config('app.link_show');
 </script>
 @endsection
 
-@section('css_map')
-<style>
-/* map用のstyle */
-#map {
-    width: 100%;
-    height: 850px;
-    margin: 0 auto;
-}
-</style>
-@endsection
-
 @section('content')
   @include('nav')
   <div class="container px-0">
     <!-- マップ用div要素 -->
-    <div id="map"></div>
+    <div id="map" class="map-use"></div>
   </div>
 @endsection
