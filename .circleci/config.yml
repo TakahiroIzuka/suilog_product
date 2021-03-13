@@ -70,8 +70,8 @@ jobs:
               git pull origin main && \
               composer install -n --no-dev --prefer-dist && \ 
               npm ci && \
-              npm run prod"　
-
+              npm run prod && \
+              php artisan config:cache" 
 
 
 workflows:
