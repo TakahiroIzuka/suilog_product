@@ -72,7 +72,7 @@ jobs:
               npm ci && \
               npm run prod && \
               php artisan migrate:refresh --force && \
-              mysql -u ${RDS_USER} -p {RDS_PASSWORD} -h {RDS_HOSE} suilog_db < suilogtest && \
+              mysql -u ${RDS_USER} -p ${RDS_PASSWORD} -h ${RDS_HOSE} suilog_db < suilogtest && \
               php artisan db:seed && \
               php artisan config:cache"　
 
