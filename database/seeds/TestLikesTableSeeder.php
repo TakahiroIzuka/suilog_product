@@ -31,25 +31,19 @@ class TestLikesTableSeeder extends Seeder
 
         $param = [
             'user_id' => 4,
-            'store_id' => 4,
+            'store_id' => 1,
         ];
         DB::table('likes')->insert($param);
 
         $param = [
             'user_id' => 5,
-            'store_id' => 5,
+            'store_id' => 2,
         ];
         DB::table('likes')->insert($param);
 
         $param = [
             'user_id' => 6,
-            'store_id' => 6,
-        ];
-        DB::table('likes')->insert($param);
-
-        $param = [
-            'user_id' => 7,
-            'store_id' => 7,
+            'store_id' => 3,
         ];
         DB::table('likes')->insert($param);
 
