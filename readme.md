@@ -50,7 +50,7 @@
 
 作成情報
 
-* 伊塚　隆弘 
+* 伊塚　隆弘 (非喫煙者)
 * E-mail : takahiroi.311@gmail.com
 
 
