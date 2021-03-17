@@ -1,3 +1,5 @@
+
+
 function initMap() {
   // Geolocation APIに対応している
   if (navigator.geolocation) {
@@ -25,16 +27,20 @@ function initMap() {
 
               service.getDistanceMatrix(matrixOptions, callback);
 
+              function orgRound(value, base) {
+                return Math.round(value * base) / base;
+              }
+
               // Callback function used to process Distance Matrix response
               function callback(response, status) {
                 if (status !== "OK") {
                   alert("Error with distance matrix");
                   return;
                 }
-
                 // 値を０からナンバリング
                 for (let i = 0; i < max; i++) {
                   response.rows[i].elements.push([i]);
+                  // console.log(response.rows[i].elements);
                 }
                 // 現在地から近い順にソート
                 for (i = 0; i < max - 1; i++) {
@@ -46,25 +52,45 @@ function initMap() {
                     }
                   }
                 }
+                console.log(response)
                 // Callbackで取得したデータとPHPから受け取ったデータをHTMLへ飛ばす
                 for (i = 0; i < max; i++) {
                   let store_id = response.rows[i].elements[1];
-
-                  document.getElementById("link" + i)
+                  document.getElementById("url" + i)
                     .href = stores[store_id].url;
-                    
+
+                  document.getElementById("store_pic" + i)
+                    .src = stores[store_id].store_pic;
+
                   document.getElementById("name" + i)
                     .textContent = stores[store_id].name;
+
                   document.getElementById("score" + i)
-                    .textContent = "スイログ評価 (" + stores[store_id].score + ")";
+                    .textContent = "スイログ評価 : " + stores[store_id].score;
+
                   document.getElementById("type" + i)
                     .textContent = "ジャンル : " + stores[store_id].type;
+
                   document.getElementById("station" + i)
                     .textContent = "最寄駅 : " + stores[store_id].station;
+
                   document.getElementById("distance" + i)
-                    .textContent = "距離 : " + response.rows[i].elements[0].distance.text;
-                  document.getElementById("time" + i)
-                    .textContent = "ここから徒歩 : " + response.rows[i].elements[0].duration.text;
+                    .textContent = Math.round(response.rows[i].elements[0].distance.value / 100) / 10;
+
+                  if(response.rows[i].elements[0].duration.value < 3600) {
+                    document.getElementById("time_m" + i)
+                      .textContent = Math.round(response.rows[i].elements[0].duration.value / 60);
+                  }else {
+                    let hour = Math.floor(response.rows[i].elements[0].duration.value / 3600);
+                    let minuts = (response.rows[i].elements[0].duration.value / 3600) - hour
+                    document.getElementById("time_h" + i)
+                      .textContent = hour;
+                    document.getElementById("hour" + i)
+                      .textContent = "時間";
+                    document.getElementById("time_m" + i)
+                      .textContent = Math.round(minuts * 60);
+                  }
+
                   if(stores[store_id].smoking_green == "全席喫煙可") {
                     document.getElementById("smoking_green" + i)
                       .textContent = stores[store_id].smoking_green;
