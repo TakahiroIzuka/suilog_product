@@ -23,4 +23,34 @@
   }
 }
 
+.store_img {
+  width: 50px;
+  height: 50px;
+}
 
+@media screen and (min-width: 576px) {
+  .store_img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.f-small {
+  font-size: 11px;
+}
+
+.f-title {
+  font-weight: 500;
+} 
+
+.green-btn {
+  background-color: #2FAD66;
+}
+
+.green-text {
+  color: #2FAD66;
+}
+
+.orange-text {
+  color: #FF8F3E;
+}
