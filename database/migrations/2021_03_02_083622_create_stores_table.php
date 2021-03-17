@@ -22,6 +22,7 @@ class CreateStoresTable extends Migration
             $table->string('address');
             $table->string('ward');
             $table->string('station');
+            $table->string('store_pic');
             $table->integer('status')->default(1);
         });
     }

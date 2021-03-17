@@ -18,7 +18,8 @@ class StoresTableSeeder extends Seeder
             'smoking' => '分煙',
             'address' => '東京都港区虎ノ門1-11-14 第二ジェスペールビル 1F',
             'ward' => '東京',
-            'station' => '虎ノ門駅'
+            'station' => '虎ノ門駅',
+            'store_pic' => 'https://tblg.k-img.com/restaurant/images/Rvw/142934/150x150_square_142934054.jpg'
         ];
         DB::table('stores')->insert($param);
 
@@ -29,7 +30,8 @@ class StoresTableSeeder extends Seeder
             'smoking' => '分煙',
             'address' => '東京都文京区本郷3-27-9 アンリツビル B1F~1F',
             'ward' => '東京',
-            'station' => '本郷3丁目駅'
+            'station' => '本郷3丁目駅',
+            'store_pic' => 'https://tblg.k-img.com/restaurant/images/Rvw/142934/150x150_square_142934054.jpg'
         ];
         DB::table('stores')->insert($param);
 
@@ -40,7 +42,8 @@ class StoresTableSeeder extends Seeder
             'smoking' => '全席喫煙可',
             'address' => '東京都台東区雷門2-14-6',
             'ward' => '東京',
-            'station' => '浅草駅 (東部・都営・メトロ)'
+            'station' => '浅草駅 (東部・都営・メトロ)',
+            'store_pic' => 'https://tblg.k-img.com/restaurant/images/Rvw/142934/150x150_square_142934054.jpg'
         ];
         DB::table('stores')->insert($param);
     }
