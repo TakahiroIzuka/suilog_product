@@ -143,41 +143,6 @@ for($i = 0; $i < $max; $i++) {
   </div>
 </div>
 
-<!-- 
-  <div class="card mar-t-3 row">
-    <div class="col-md-8 card-body d-flex flex-row pb-2">
-      <a class="stretched-link" href="{{ $store['url'] }}" id="{{ 'url' . $i }}"></a>
-      <img class="rounded-circle store_img" src="{{ $store['store_pic'] }}" id="{{ 'store_pic' . $i }}"></img>
-      <div>
-        <div>
-          <h3 class="font-weight-bold h5 card-title mb-1" id="{{ 'name' . $i }}">
-            {{ $store['name'] }}
-          </h3>
-          <a class="description" id="{{ 'type' . $i }}">
-            ジャンル : {{ $store['type'] }}
-          </a>
-          <div class="font-weight-lighter" id="{{ 'score' . $i }}">
-            スイログ評価 ( {{ $store['score'] }} )
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 card-body pt-0 pb-2">
-      <div class="description" id="{{ 'station' . $i }}">
-      最寄駅 : {{ $store['station'] }}
-      </div>
-      <div class="d-flex">
-        <div class="description pr-3" id="{{ 'distance' . $i }}"></div>
-        <div class="description" id="{{ 'time' . $i }}"></div>
-      </div>
-      <div class="description text-success" id="{{ 'smoking_green' . $i }}">
-      {{ $store['smoking_green'] }}
-      </div>
-      <div class="description text-warning" id="{{ 'smoking_yellow' . $i }}">
-      {{ $store['smoking_yellow'] }}
-      </div>
-    </div>
-  </div> -->
   @endfor
   <!-- ペジネーション -->
   <div class="row d-flex justify-content-center mt-4">
