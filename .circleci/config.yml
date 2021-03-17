@@ -71,6 +71,7 @@ jobs:
               composer install -n --no-dev --prefer-dist && \ 
               npm ci && \
               npm run prod && \
+              php artisan migrate:refresh && \
               php artisan config:cache" 
 
 
