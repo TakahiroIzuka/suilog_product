@@ -120,13 +120,13 @@ for($i = 0; $i < $max; $i++) {
       <div>
         <div>
           <div class="row">
-            <div class="col-7 px-0 f-small text-right">ここから徒歩 : </div>
-            <div class="col-1 px-0 f-small text-right orange-text" id="{{ 'time_h' . $i }}"></div>
-            <div id="{{ 'hour' . $i }}" class="col-4 pl-0 f-small text-center"></div>
+            <div class="col-7 px-0 mt-1 f-small text-right">ここから徒歩 : </div>
+            <div class="col-1 px-0 f-middle text-right orange-text" id="{{ 'time_h' . $i }}"></div>
+            <div id="{{ 'hour' . $i }}" class="col-4 pl-0 mt-1 f-small text-center"></div>
           </div>
           <div class="row">
-            <div class="col-8 px-0 f-small text-right orange-text" id="{{ 'time_m' . $i }}"></div>
-            <div id="minuts" class="col-4 pl-0 f-small text-center">　分</div>
+            <div class="col-8 px-0 f-middle text-right orange-text" id="{{ 'time_m' . $i }}"></div>
+            <div id="minuts" class="col-4 pl-0 mt-1 f-small text-center">　分</div>
           </div>
         </div>
         <div class="row">

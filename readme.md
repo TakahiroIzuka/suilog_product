@@ -4,7 +4,7 @@
 * 開発内容：Pythonにて食べログサイトのスクレイピング、GooglemapAPI連携、UIデザイン(Bootstrap)、会員機能、スイログ評価機能、クチコミ投稿機能
 
 ## デモ
-![System Diagram-Page-3](https://user-images.githubusercontent.com/67720987/110643482-7bde3f00-81f7-11eb-9a66-1adbbe4b4ff3.png)
+![System Diagram-Page-3 (6)](https://user-images.githubusercontent.com/67720987/111577516-c7937880-87f5-11eb-9077-62495dacd6fd.png)
 
 ## DB設計
 ![System Diagram-Page-2 (2)](https://user-images.githubusercontent.com/67720987/110644110-1dfe2700-81f8-11eb-9719-bd97ca325a32.png)
