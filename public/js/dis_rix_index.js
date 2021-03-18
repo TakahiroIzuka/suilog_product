@@ -66,7 +66,7 @@ function initMap() {
                     .textContent = stores[store_id].name;
 
                   document.getElementById("score" + i)
-                    .textContent = "スイログ評価 : " + stores[store_id].score;
+                    .textContent = "食べログ評価 : " + stores[store_id].score;
 
                   document.getElementById("type" + i)
                     .textContent = "ジャンル : " + stores[store_id].type;

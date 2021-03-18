@@ -34,9 +34,20 @@ function initMap() {
                 
                 // Callbackで取得したデータとPHPから受け取ったデータをHTMLへ飛ばす
                 document.getElementById("distance")
-                  .textContent = "距離 : " + response.rows[0].elements[0].distance.text;
-                document.getElementById("time")
-                  .textContent = "ここから徒歩 : " + response.rows[0].elements[0].duration.text;
+                    .textContent = Math.round(response.rows[0].elements[0].distance.value / 100) / 10;
+                if(response.rows[0].elements[0].duration.value < 3600) {
+                    document.getElementById("time_m")
+                        .textContent = Math.round(response.rows[0].elements[0].duration.value / 60);
+                }else {
+                    let hour = Math.floor(response.rows[0].elements[0].duration.value / 3600);
+                    let minuts = (response.rows[0].elements[0].duration.value / 3600) - hour
+                    document.getElementById("time_h")
+                        .textContent = hour;
+                    document.getElementById("hour")
+                        .textContent = "時間";
+                    document.getElementById("time_m")
+                        .textContent = Math.round(minuts * 60);
+                }
               }
           },
           // 取得失敗した場合

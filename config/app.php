@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'スイログ'),
+    'name' => env('APP_NAME', 'スイログtokyo'),
 
     'gmap_key' => env('GMAP_KEY'),
 
