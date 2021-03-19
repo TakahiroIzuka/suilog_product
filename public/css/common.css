@@ -24,14 +24,14 @@
 }
 
 .store_img {
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (min-width: 576px) {
   .store_img {
-    width: 170px;
-    height: 170px;
+    width: 70px;
+    height: 70px;
   }
 }
 
