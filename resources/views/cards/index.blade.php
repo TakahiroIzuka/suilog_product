@@ -86,14 +86,11 @@ for($i = 0; $i < $max; $i++) {
 
     <div class="col-3 px-0">
       <div class="text-center">
-        <i class="fas fa-beer fa-4x"></i>
-        <!-- <i class="d-block mx-auto rounded-circle store_img" src="{{ $store['store_pic'] }}" id="{{ 'store_pic' . $i }}"></i> -->
+        <img class="d-block mx-auto rounded-circle store_img" src="{{ $store['store_pic'] }}" id="{{ 'store_pic' . $i }}"></img>
       </div>
       <div class="text-center">
         <i class="mt-3"></i>
-        <div class="" id="{{ 'like' . $i }}">
-
-        </div>
+        <div class="" id="{{ 'like' . $i }}"></div>
       </div>
     </div>
 
