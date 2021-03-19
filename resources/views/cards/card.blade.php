@@ -15,16 +15,16 @@
 
       <div class="card-body pt-0 pb-2">
         <div class="card-body pt-0 pb-2 pl-0">
-            <div class="card-text">
-              <card-like
-                :initial-is-liked-by='@json($store->isLikedBy(Auth::user()))'
-                :initial-count-likes='@json($store->count_likes)'
-                :authorized='@json(Auth::check())'
-                endpoint="{{ route('cards.like', ['store' => $store]) }}"
-              >
-              </card-like>
-            </div>
+          <div class="card-text">
+            <card-like
+              :initial-is-liked-by='@json($store->isLikedBy(Auth::user()))'
+              :initial-count-likes='@json($store->count_likes)'
+              :authorized='@json(Auth::check())'
+              endpoint="{{ route('cards.like', ['store' => $store]) }}"
+            >
+            </card-like>
           </div>
+        </div>
         @if($store->smoking == '全席喫煙可')
           <div class="description text-success" id="{{ 'smoking' }}">
             {{ $store->smoking }}
@@ -52,7 +52,7 @@
         </div>
         <div class="row pl-3">
           <div class="col-3 px-0">・距離 : </div>
-          <div class="col-1 px-0 text-center green-text" id="{{ 'distance' }}"></div>
+          <div class="col-2 px-0 text-center green-text" id="{{ 'distance' }}"></div>
           <div class="col-1 px-0">km</div>
         </div>
       </div>

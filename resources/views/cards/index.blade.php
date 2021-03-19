@@ -15,6 +15,7 @@
 
 @section('php')
 @php
+
 $gmap_key = config('app.gmap_key');
 $link_show = config('app.link_show');
 
@@ -84,8 +85,15 @@ for($i = 0; $i < $max; $i++) {
   <div class="row py-2 pl-2 pr-4">
 
     <div class="col-3 px-0">
-      <div>
-        <img class="d-block mx-auto rounded-circle store_img" src="{{ $store['store_pic'] }}" id="{{ 'store_pic' . $i }}"></img>
+      <div class="text-center">
+        <i class="fas fa-beer fa-4x"></i>
+        <!-- <i class="d-block mx-auto rounded-circle store_img" src="{{ $store['store_pic'] }}" id="{{ 'store_pic' . $i }}"></i> -->
+      </div>
+      <div class="text-center">
+        <i class="mt-3"></i>
+        <div class="" id="{{ 'like' . $i }}">
+
+        </div>
       </div>
     </div>
 

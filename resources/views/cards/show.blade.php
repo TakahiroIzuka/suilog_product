@@ -33,6 +33,7 @@ $geo_php = $geo->lat . "," . $geo->lng;
   <div class="container px-0">
     @include('cards.card')
     @include('articles.create')
+    
     @if($articles->has(0))
       @foreach($articles as $article)
         @include('articles.article_card')
