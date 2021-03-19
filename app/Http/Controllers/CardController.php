@@ -6,14 +6,16 @@ use App\Store;
 use App\Url;
 use App\Geo;
 use App\Article;
+use App\Like;
 use Illuminate\Http\Request;
 
 class CardController extends Controller
 {
     public function index()
     {
-        $stores = Store::where('status', 1)->orderBy('id', 'ASC')->paginate(20);
-        $geos = Geo::paginate(20);
+        $stores = Store::where('status', 1)->orderBy('id', 'ASC')->paginate(17);
+        $geos = Geo::paginate(17);
+        // $likes = Like::paginate(17);
 
         return view('cards.index', compact('stores', 'geos'));
     }

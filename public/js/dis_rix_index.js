@@ -59,8 +59,8 @@ function initMap() {
                   document.getElementById("url" + i)
                     .href = stores[store_id].url;
 
-                  document.getElementById("store_pic" + i)
-                    .src = stores[store_id].store_pic;
+                  // document.getElementById("store_pic" + i)
+                  //   .src = stores[store_id].store_pic;
 
                   document.getElementById("name" + i)
                     .textContent = stores[store_id].name;
