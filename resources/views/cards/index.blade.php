@@ -86,7 +86,7 @@ for($i = 0; $i < $max; $i++) {
 
     <div class="col-3 px-0">
       <div class="text-center">
-        <img class="d-block mx-auto rounded-circle store_img" src="{{ $store['store_pic'] }}" id="{{ 'store_pic' . $i }}"></img>
+        <img class="lazyload d-block mx-auto rounded-circle store_img" data-src="{{ $store['store_pic'] }}" id="{{ 'store_pic' . $i }}"></img>
       </div>
       <div class="text-center">
         <i class="mt-3"></i>
