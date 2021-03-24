@@ -17,8 +17,9 @@
   <!-- CSS -->
   @if(app('env')=='local')
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
-  @endif
-  @if(app('env')=='production')
+  @elseif(app('env')=='test')
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
+  @elseif(app('env')=='production')
     <link rel="stylesheet" href="{{ secure_asset('css/common.css') }}">
   @endif
 

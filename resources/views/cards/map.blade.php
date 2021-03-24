@@ -6,8 +6,10 @@
   @if(app('env')=='local')
     <script src="{{ asset('/js/map.js') }}"></script>
     <script src="{{ asset('/js/gmap_api.js') }}"></script>
-  @endif
-  @if(app('env')=='production')
+  @elseif(app('env')=='test')
+    <script src="{{ asset('/js/map.js') }}"></script>
+    <script src="{{ asset('/js/gmap_api.js') }}"></script>
+  @elseif(app('env')=='production')
     <script src="{{ secure_asset('/js/map.js') }}"></script>
     <script src="{{ secure_asset('/js/gmap_api.js') }}"></script>
   @endif
