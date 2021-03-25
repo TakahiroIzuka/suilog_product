@@ -1,7 +1,8 @@
 # スイログ　suilog_product
 
 * 喫煙マナーを促進するための、喫煙可能な飲食店が検索できる飲食店検索マップアプリ
-* 開発内容：Pythonにて食べログサイトのスクレイピング、GooglemapAPI連携、UIデザイン(Bootstrap)、会員機能、スイログ評価機能、クチコミ投稿機能
+* アプリ開発の経緯：2020年4月からの健康増進法の改正で、店内での喫煙ができない飲食店が多くなり、それに伴って、店の前の路上で喫煙する人が多くなりました。もっと手軽に喫煙可能な飲食店を検索できるサービスがあれば、この問題を解決できると思い、作成しました。
+* 開発内容：Pythonにて食べログサイトのスクレイピング、GooglemapAPI連携、UIデザイン(Bootstrap)、会員機能、いいね機能、クチコミ投稿機能
 
 ## デモ
 ![System Diagram-Page-3 (6)](https://user-images.githubusercontent.com/67720987/111577516-c7937880-87f5-11eb-9077-62495dacd6fd.png)
@@ -10,7 +11,8 @@
 ![System Diagram-Page-2 (2)](https://user-images.githubusercontent.com/67720987/110644110-1dfe2700-81f8-11eb-9719-bd97ca325a32.png)
 
 ## インフラ構造図
-![System Diagram (3)](https://user-images.githubusercontent.com/67720987/110645657-839ee300-81f9-11eb-8d03-066f8d0bbd21.png)
+![System Diagram-Page-1](https://user-images.githubusercontent.com/67720987/112420385-75f86a00-8d70-11eb-90f6-595ad00671a9.png)
+
 
 
 
@@ -26,7 +28,7 @@
 
 ## 注意事項
 
-※ 現在、スマホ利用をメインに考えUIを調整中です。PCでの表示では一部UIが崩れている可能性があります。
+※ 位置情報の許可をして頂かないと現在地から近い順のお店の表示や、マップ機能が使えなくなりますので、注意してください。
 
 
 ログイン用ユーザー
