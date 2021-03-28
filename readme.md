@@ -41,14 +41,16 @@
 * HTML/CSS
 * MDBootstrap
 * PHP(laravel 6.2)
+* PHPUnit 8.5.14
 * MySQL 5.7
 * JavaScript
 * Vue.js 2.6
 * Python 3.6.5
 * Docker
-* CircleCi
+* docker-compose 3.8
+* CircleCi 2.0
 * Aws
-* nginx
+* nginx 1.18
 
 
 ## 文責
