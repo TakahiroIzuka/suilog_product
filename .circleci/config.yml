@@ -3,14 +3,16 @@ jobs:
   build:
     docker:
       - image: takahiroi/suilog_app:latest
-      - image: takahiroi/suilog_db:latest
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
           MYSQL_DATABASE: suilog_db_testing
           MYSQL_USER: admin
           MYSQL_PASSWORD: pass
-    environment:
-      - DB_HOST: 127.0.0.1
+
+      - image: takahiroi/suilog_db:latest
+        environment:
+          - MYSQL_ALLOW_EMPTY_PASSWORD: true
+          - MYSQL_DATABASE: suilog_db_testing
           
 
     steps:
