@@ -5,14 +5,16 @@ jobs:
       - image: takahiroi/suilog_app:latest
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
-          MYSQL_DATABASE: suilog_db_testing
+          MYSQL_DATABASE: suilog_db
           MYSQL_USER: admin
           MYSQL_PASSWORD: pass
 
       - image: takahiroi/suilog_db:latest
         environment:
           - MYSQL_ALLOW_EMPTY_PASSWORD: true
-          - MYSQL_DATABASE: suilog_db_testing
+          - MYSQL_DATABASE: suilog_db
+    # environment:
+    #   - DB_HOST: 127.0.0.1
           
 
     steps:
