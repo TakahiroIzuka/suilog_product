@@ -53,7 +53,7 @@ jobs:
       - run: php artisan migrate:refresh
       - run:
           name: php test
-          command: vendor/bin/phpunit
+          command: vendor/bin/phpunit --testdox
       - store_artifacts: 
           path: ./storage/logs
 
