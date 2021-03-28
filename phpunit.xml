@@ -27,7 +27,13 @@
         <server name="BCRYPT_ROUNDS" value="4"/>
         <server name="CACHE_DRIVER" value="array"/>
         <server name="DB_CONNECTION" value="mysql"/>
-        <server name="DB_DATABASE" value="test_suilog_db"/>
+        <server name="DB_DATABASE" value="suilog_db_testing"/>
+        <!-- テストで使うDBのスキーマ名 -->
+        <server name="DB_DATABASE" value="suilog_db_testing"/>
+        <!-- 接続するuserの名前 -->
+        <server name="DB_USERNAME" value="root"/>
+        <!-- 接続するuserのパスワード -->
+        <server name="DB_PASSWORD" value="root"/>
         <server name="MAIL_DRIVER" value="array"/>
         <server name="QUEUE_CONNECTION" value="sync"/>
         <server name="SESSION_DRIVER" value="array"/>
