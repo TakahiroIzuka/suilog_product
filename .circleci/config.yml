@@ -6,7 +6,7 @@ jobs:
       - image: takahiroi/suilog_db:latest
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
-          MYSQL_DATABASE: suilog_db_testing
+          MYSQL_DATABASE: suilog_db
           MYSQL_USER: root
           MYSQL_PASSWORD: root
     environment:
