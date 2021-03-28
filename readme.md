@@ -79,4 +79,4 @@
 * Google Maps API の使い方・利用方法 https://www.webdesignleaves.com/pr/plugins/googlemap_01.html
 * Google Developers Distance Matrix APIの使い方 https://developers-jp.googleblog.com/2020/02/how-use-distance-matrix-api.html
 
-a
+test
