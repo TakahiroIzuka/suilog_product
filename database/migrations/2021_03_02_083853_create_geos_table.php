@@ -17,6 +17,7 @@ class CreateGeosTable extends Migration
             $table->bigIncrements('store_id');
             $table->double('lat');
             $table->double('lng');
+            $table->timestamps();
         });
     }
 

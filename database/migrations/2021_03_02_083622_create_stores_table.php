@@ -24,6 +24,7 @@ class CreateStoresTable extends Migration
             $table->string('station');
             $table->string('store_pic');
             $table->integer('status')->default(1);
+            $table->timestamps();
         });
     }
 
