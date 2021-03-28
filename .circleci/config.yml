@@ -13,8 +13,8 @@ jobs:
         environment:
           - MYSQL_ALLOW_EMPTY_PASSWORD: true
           - MYSQL_DATABASE: suilog_db
-    # environment:
-    #   - DB_HOST: 127.0.0.1
+    environment:
+      - DB_HOST: 127.0.0.1
           
 
     steps:
