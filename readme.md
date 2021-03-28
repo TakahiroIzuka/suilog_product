@@ -80,3 +80,4 @@
 * Google Developers Distance Matrix APIの使い方 https://developers-jp.googleblog.com/2020/02/how-use-distance-matrix-api.html
 
 test
+test

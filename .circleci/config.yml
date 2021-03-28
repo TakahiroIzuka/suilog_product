@@ -6,9 +6,9 @@ jobs:
       - image: takahiroi/suilog_db:latest
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
-          MYSQL_DATABASE: test_suilog_db
-          MYSQL_USER: suilog
-          MYSQL_PASSWORD: Yuri1226
+          MYSQL_DATABASE: suilog_db_testing
+          MYSQL_USER: root
+          MYSQL_PASSWORD: root
     environment:
       - DB_HOST: 127.0.0.1
           
